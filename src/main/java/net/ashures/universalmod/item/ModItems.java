@@ -1,11 +1,9 @@
 package net.ashures.universalmod.item;
 
 import net.ashures.universalmod.UniversalMod;
-import net.ashures.universalmod.item.custom.ModPickaxeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -13,8 +11,11 @@ public class ModItems {
     public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
-    public static final Item ADAMANTIUM_PICKAXE = registerItem("adamantium_pickaxe",
-            new ModPickaxeItem(ToolMaterials.NETHERITE, 2, -2.8f, new FabricItemSettings().group(ItemGroup.TOOLS)));
+    public static final Item ADAMANTIUM_NUGGET = registerItem("adamantium_nugget",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
+    public static final Item ADAMANTIUM_CLUMP = registerItem("adamantium_clump",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(UniversalMod.MOD_ID, name), item);
