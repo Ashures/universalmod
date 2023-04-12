@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "universalmod:adamantium_ore",
+    "universalmod:deepslate_adamantium_ore",
+    "universalmod:netherrack_adamantium_ore",
+    "universalmod:adamantium_block"
+  ]
+}
