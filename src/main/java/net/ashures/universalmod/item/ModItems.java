@@ -9,11 +9,11 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item IMPURE_ADAMANTIUM = registerItem("impure_adamantium",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
     public static final Item ADAMANTIUM_NUGGET = registerItem("adamantium_nugget",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
     public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(UniversalMod.MOD_ID, name), item);

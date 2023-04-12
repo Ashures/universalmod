@@ -1,6 +1,7 @@
 package net.ashures.universalmod.block;
 
 import net.ashures.universalmod.UniversalMod;
+import net.ashures.universalmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -16,13 +17,13 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static final Block ADAMANTIUM_ORE = registerBlock("adamantium_ore",
-            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(40f,1200f).requiresTool().sounds(BlockSoundGroup.STONE), UniformIntProvider.create(6, 18)), ItemGroup.BUILDING_BLOCKS);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(40f,1200f).requiresTool().sounds(BlockSoundGroup.STONE), UniformIntProvider.create(6, 18)), ModItemGroup.UNIVERSAL);
     public static final Block ADAMANTIUM_BLOCK = registerBlock("adamantium_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(60f,1500f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ItemGroup.BUILDING_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(60f,1500f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.UNIVERSAL);
     public static final Block DEEPSLATE_ADAMANTIUM_ORE = registerBlock("deepslate_adamantium_ore",
-            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(60f,1200f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE), UniformIntProvider.create(6, 18)), ItemGroup.BUILDING_BLOCKS);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(60f,1200f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE), UniformIntProvider.create(6, 18)), ModItemGroup.UNIVERSAL);
     public static final Block NETHERRACK_ADAMANTIUM_ORE = registerBlock("netherrack_adamantium_ore",
-            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(40f,1200f).requiresTool().sounds(BlockSoundGroup.NETHER_ORE), UniformIntProvider.create(6, 18)), ItemGroup.BUILDING_BLOCKS);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(40f,1200f).requiresTool().sounds(BlockSoundGroup.NETHER_ORE), UniformIntProvider.create(6, 18)), ModItemGroup.UNIVERSAL);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
