@@ -16,7 +16,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static final Block ADAMANTIUM_ORE = registerBlock("adamantium_ore",
-            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(40f,1200f).requiresTool(), UniformIntProvider.create(4, 8)), ItemGroup.BUILDING_BLOCKS);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(40f,1200f).requiresTool(), UniformIntProvider.create(6, 18)), ItemGroup.BUILDING_BLOCKS);
     public static final Block ADAMANTIUM_BLOCK = registerBlock("adamantium_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(60f,1500f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ItemGroup.BUILDING_BLOCKS);
 
