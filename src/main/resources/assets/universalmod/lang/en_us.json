@@ -1,5 +1,7 @@
 {
   "item.universalmod.adamantium_ingot": "Adamantium Ingot",
   "item.universalmod.adamantium_nugget": "Adamantium Nugget",
-  "item.universalmod.impure_adamantium": "Clump of Impure Adamantium"
+  "item.universalmod.impure_adamantium": "Clump of Impure Adamantium",
+
+  "block.universalmod.adamantium_block": "Block of Adamantium"
 }

@@ -1,5 +1,6 @@
 package net.ashures.universalmod;
 
+import net.ashures.universalmod.block.ModBlocks;
 import net.ashures.universalmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -12,5 +13,6 @@ public class UniversalMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
