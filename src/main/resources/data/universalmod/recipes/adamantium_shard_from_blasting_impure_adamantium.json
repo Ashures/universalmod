@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "universalmod:impure_adamantium"
   },
-  "result": "universalmod:adamantium_nugget",
+  "result": "universalmod:adamantium_shard",
   "experience": 1.0,
   "cookingtime": 100
 }

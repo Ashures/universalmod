@@ -10,7 +10,7 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
     public static final Item IMPURE_ADAMANTIUM = registerItem("impure_adamantium",
             new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
-    public static final Item ADAMANTIUM_NUGGET = registerItem("adamantium_nugget",
+    public static final Item ADAMANTIUM_SHARD = registerItem("adamantium_shard",
             new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
     public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
