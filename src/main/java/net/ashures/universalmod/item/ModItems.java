@@ -8,13 +8,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
-    public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
+    public static final Item IMPURE_ADAMANTIUM = registerItem("impure_adamantium",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-
     public static final Item ADAMANTIUM_NUGGET = registerItem("adamantium_nugget",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-
-    public static final Item IMPURE_ADAMANTIUM = registerItem("impure_adamantium",
+    public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
