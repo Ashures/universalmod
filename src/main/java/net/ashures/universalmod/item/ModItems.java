@@ -3,7 +3,6 @@ package net.ashures.universalmod.item;
 import net.ashures.universalmod.UniversalMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
