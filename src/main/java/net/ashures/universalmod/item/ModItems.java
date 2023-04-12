@@ -14,7 +14,7 @@ public class ModItems {
     public static final Item ADAMANTIUM_NUGGET = registerItem("adamantium_nugget",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
-    public static final Item ADAMANTIUM_CLUMP = registerItem("adamantium_clump",
+    public static final Item IMPURE_ADAMANTIUM = registerItem("impure_adamantium",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
