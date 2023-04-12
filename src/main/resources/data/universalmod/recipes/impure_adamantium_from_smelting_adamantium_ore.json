@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "universalmod:adamantium_ore"
+  },
+  "result": "universalmod:impure_adamantium",
+  "experience": 0.0,
+  "cookingtime": 200
+}
