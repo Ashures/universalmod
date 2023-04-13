@@ -2,10 +2,13 @@
   "item.universalmod.adamantium_ingot": "Adamantium Ingot",
   "item.universalmod.adamantium_shard": "Adamantium Shard",
   "item.universalmod.impure_adamantium": "Clump of Impure Adamantium",
-  "item.universalmod.adamantium_god_rod": "Adamantium God Rod",
+
 
   "block.universalmod.adamantium_block": "Block of Adamantium",
   "block.universalmod.adamantium_ore": "Adamantium Ore",
 
-  "itemGroup.universalmod.universal": "Universal"
+  "itemGroup.universalmod.universal": "Universal",
+
+  "item.universalmod.adamantium_god_rod": "Adamantium God Rod",
+  "item.universalmod.divine_hammer": "Ashures' Divine Hammer of Omnipotence"
 }

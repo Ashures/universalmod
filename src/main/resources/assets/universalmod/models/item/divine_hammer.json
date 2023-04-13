@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "universalmod:item/ban_hammer"
+    "layer0": "universalmod:item/divine_hammer"
   }
 }
