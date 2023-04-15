@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/carpet",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "wool": "universalmod:block/adamantium_block"
+    "all": "universalmod:block/adamantium_block"
   }
 }
