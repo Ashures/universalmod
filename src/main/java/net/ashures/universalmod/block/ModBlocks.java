@@ -1,6 +1,7 @@
 package net.ashures.universalmod.block;
 
 import net.ashures.universalmod.UniversalMod;
+import net.ashures.universalmod.block.custom.LaunchPadBlock;
 import net.ashures.universalmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -24,6 +25,8 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(60f,1200f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE), UniformIntProvider.create(6, 18)), ModItemGroup.UNIVERSAL);
     public static final Block NETHERRACK_ADAMANTIUM_ORE = registerBlock("netherrack_adamantium_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(40f,1200f).requiresTool().sounds(BlockSoundGroup.NETHER_ORE), UniformIntProvider.create(6, 18)), ModItemGroup.UNIVERSAL);
+    public static final Block LAUNCH_PAD = registerBlock("launch_pad",
+            new LaunchPadBlock(FabricBlockSettings.of(Material.CARPET).breakInstantly().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ModItemGroup.UNIVERSAL);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
