@@ -2,7 +2,11 @@
   "item.universalmod.adamantium_ingot": "Adamantium Ingot",
   "item.universalmod.adamantium_shard": "Adamantium Shard",
   "item.universalmod.impure_adamantium": "Clump of Impure Adamantium",
+
   "item.universalmod.lightning_staff": "Lightning Staff",
+  "item.universalmod.fire_staff": "Lightning Staff",
+  "item.universalmod.dragon_staff": "Lightning Staff",
+
   "item.universalmod.adamantium_god_rod": "Adamantium God Rod",
   "item.universalmod.divine_hammer": "Ashures' Divine Hammer of Omnipotence",
 
