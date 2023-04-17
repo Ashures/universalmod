@@ -1,5 +1,6 @@
 package net.ashures.universalmod.item.custom;
 
+import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FireBlock;
@@ -35,7 +36,6 @@ public class LightningStaffItem extends Item {
         }
 
         if (!hitBlock.getBlock().equals(Blocks.AIR)) {
-            user.sendMessage(hitBlock.getBlock().getName(), false);
             castSpell(world, blockCheck.getPos(), user);
             return TypedActionResult.success(user.getMainHandStack(), true);
         } else {
@@ -44,8 +44,14 @@ public class LightningStaffItem extends Item {
     }
 
     public void castSpell(World world, Vec3d spawnPos, PlayerEntity player) {
+        BlockPos blockPos = new BlockPos(spawnPos);
+        BlockState blockState = AbstractFireBlock.getState(world, blockPos);
+
         LightningEntity entity = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
         entity.setPosition(spawnPos);
+
+        if (world.getBlockState(blockPos).isAir() && blockState.canPlaceAt(world, blockPos))
+            world.setBlockState(blockPos, blockState);
 
         world.spawnEntity(entity);
     }
