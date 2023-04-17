@@ -25,16 +25,22 @@ public class LightningStaffItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        HitResult blockCheck = user.raycast(40, 0, true);
-        BlockState hitBlock = world.getBlockState(new BlockPos(blockCheck.getPos()));
+        HitResult blockCheck = user.raycast(30, 1, true);
+        BlockPos blockPos = new BlockPos(blockCheck.getPos());
+        BlockState hitBlock = world.getBlockState(blockPos);
+
+        if (hitBlock.getBlock().equals(Blocks.AIR))
+        {
+            hitBlock = world.getBlockState(new BlockPos(blockPos.getX(), blockPos.getY() - 1, blockPos.getZ()));
+        }
 
         if (!hitBlock.getBlock().equals(Blocks.AIR)) {
             user.sendMessage(hitBlock.getBlock().getName(), false);
             castSpell(world, blockCheck.getPos(), user);
             return TypedActionResult.success(user.getMainHandStack(), true);
+        } else {
+            return super.use(world, user, hand);
         }
-
-        return super.use(world, user, hand);
     }
 
     public void castSpell(World world, Vec3d spawnPos, PlayerEntity player) {
