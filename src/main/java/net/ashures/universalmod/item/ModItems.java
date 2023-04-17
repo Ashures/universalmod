@@ -3,6 +3,7 @@ package net.ashures.universalmod.item;
 import net.ashures.universalmod.UniversalMod;
 import net.ashures.universalmod.item.custom.AdamantiumGodRodItem;
 import net.ashures.universalmod.item.custom.DivineHammerItem;
+import net.ashures.universalmod.item.custom.LightningStaffItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -15,6 +16,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
     public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
+    public static final Item LIGHTNING_STAFF = registerItem("lightning_staff",
+            new LightningStaffItem(new FabricItemSettings().group(ModItemGroup.UNIVERSAL).maxCount(1)));
     public static final Item ADAMANTIUM_GOD_ROD = registerItem("adamantium_god_rod",
             new AdamantiumGodRodItem(new FabricItemSettings().maxCount(1)));
     public static final Item DIVINE_HAMMER = registerItem("divine_hammer",
