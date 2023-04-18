@@ -1,0 +1,8 @@
+{
+  "healing_staff_success": {
+    "subtitle": "universalmod.healing_staff_success",
+    "sounds": [
+      "universalmod:healing_staff_success"
+    ]
+  }
+}
