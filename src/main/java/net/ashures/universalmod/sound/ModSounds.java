@@ -12,4 +12,8 @@ public class ModSounds{
         Identifier id = new Identifier(UniversalMod.MOD_ID, name);
         return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
     }
+
+    public static void registerModSounds() {
+        UniversalMod.LOGGER.info("Registering Mod Sounds for " + UniversalMod.MOD_ID);
+    }
 }
