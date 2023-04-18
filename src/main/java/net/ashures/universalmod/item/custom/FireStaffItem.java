@@ -31,7 +31,7 @@ public class FireStaffItem extends Item {
         Vec3d direction = new Vec3d(playerRotation.x, playerRotation.y, playerRotation.z);
         Vec3d position = new Vec3d(player.getX(), player.getEyeY() - 0.4, player.getZ());
 
-        FireballEntity entity = new FireballEntity(world, player, direction.x, direction.y, direction.z, 3);
+        FireballEntity entity = new FireballEntity(world, player, direction.x, direction.y, direction.z, 6);
         entity.speed = 4.0f;
         entity.setPosition(position);
 
