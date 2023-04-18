@@ -3,6 +3,7 @@ package net.ashures.universalmod.item;
 import net.ashures.universalmod.UniversalMod;
 import net.ashures.universalmod.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -26,6 +27,8 @@ public class ModItems {
             new AdamantiumGodRodItem(new FabricItemSettings().maxCount(1)));
     public static final Item DIVINE_HAMMER = registerItem("divine_hammer",
             new DivineHammerItem(new FabricItemSettings().maxCount(1)));
+    public static final Item DIVINE_APPLE = registerItem("divine_apple",
+            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(20).saturationModifier(1).build())));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(UniversalMod.MOD_ID, name), item);
