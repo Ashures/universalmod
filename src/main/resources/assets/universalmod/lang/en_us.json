@@ -3,9 +3,10 @@
   "item.universalmod.adamantium_shard": "Adamantium Shard",
   "item.universalmod.impure_adamantium": "Clump of Impure Adamantium",
 
-  "item.universalmod.lightning_staff": "Lightning Staff",
-  "item.universalmod.fire_staff": "Fire Staff",
-  "item.universalmod.dragon_staff": "Dragon Staff",
+  "item.universalmod.lightning_staff": "Staff of Lightning",
+  "item.universalmod.fire_staff": "Staff of Fire",
+  "item.universalmod.dragon_staff": "Staff of Dragon Fire",
+  "item.universalmod.healing_staff": "Staff of Healing",
 
   "item.universalmod.adamantium_god_rod": "Adamantium God Rod",
   "item.universalmod.divine_hammer": "Ashures' Divine Hammer of Omnipotence",
@@ -13,6 +14,8 @@
   "block.universalmod.adamantium_block": "Block of Adamantium",
   "block.universalmod.adamantium_ore": "Adamantium Ore",
   "block.universalmod.launch_pad": "Launch Pad",
+
+  "universalmod.healing_staff_success": "Healing Staff Success Sound",
 
   "itemGroup.universalmod.universal": "Universal"
 }

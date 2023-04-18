@@ -20,6 +20,8 @@ public class ModItems {
             new FireStaffItem(new FabricItemSettings().group(ModItemGroup.UNIVERSAL).maxCount(1)));
     public static final Item DRAGON_STAFF = registerItem("dragon_staff",
             new DragonStaffItem(new FabricItemSettings().group(ModItemGroup.UNIVERSAL).maxCount(1)));
+    public static final Item HEALING_STAFF = registerItem("healing_staff",
+            new HealingStaffItem(new FabricItemSettings().group(ModItemGroup.UNIVERSAL).maxCount(1)));
     public static final Item ADAMANTIUM_GOD_ROD = registerItem("adamantium_god_rod",
             new AdamantiumGodRodItem(new FabricItemSettings().maxCount(1)));
     public static final Item DIVINE_HAMMER = registerItem("divine_hammer",
