@@ -4,9 +4,9 @@
   "package": "net.ashures.universalmod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModPlayerData"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
