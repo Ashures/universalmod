@@ -30,7 +30,7 @@ public class ModItems {
     public static final Item DIVINE_HAMMER = registerItem("divine_hammer",
             new DivineHammerItem(new FabricItemSettings().maxCount(1)));
     public static final Item DIVINE_APPLE = registerItem("divine_apple",
-            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(20).saturationModifier(1).build())));
+            new Item(new FabricItemSettings().food(ModFoodComponents.DIVINE_APPLE)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(UniversalMod.MOD_ID, name), item);
