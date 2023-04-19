@@ -15,6 +15,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
     public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
+    public static final Item ADAMANTIUM_DUST = registerItem("adamantium_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.UNIVERSAL)));
     public static final Item LIGHTNING_STAFF = registerItem("lightning_staff",
             new LightningStaffItem(new FabricItemSettings().group(ModItemGroup.UNIVERSAL).maxCount(1)));
     public static final Item FIRE_STAFF = registerItem("fire_staff",

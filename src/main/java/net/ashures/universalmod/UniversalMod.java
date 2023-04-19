@@ -3,6 +3,7 @@ package net.ashures.universalmod;
 import net.ashures.universalmod.block.ModBlocks;
 import net.ashures.universalmod.item.ModItems;
 import net.ashures.universalmod.sound.ModSounds;
+import net.ashures.universalmod.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,5 +17,7 @@ public class UniversalMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerModSounds();
+
+		ModRegistries.registerModExtras();
 	}
 }
