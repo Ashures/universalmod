@@ -29,14 +29,16 @@ public class DivineHammerItem extends Item {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (!world.isClient()) {
-            if (entity instanceof PlayerEntity player) {
-                if (selected) {
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 5, 9));
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 5, 9));
+        if (entity instanceof PlayerEntity player) {
+            if (selected) {
+                if (world.isClient()) {
                     isActive = true;
                 } else {
-                    player.setNoGravity(false);
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 5, 9, false, false));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 5, 9, false, false));
+                }
+            } else {
+                if (world.isClient()) {
                     isActive = false;
                 }
             }
