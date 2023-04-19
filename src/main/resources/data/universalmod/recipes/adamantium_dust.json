@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "universalmod:adamantium_ingot"
+  },
+  "addition": {
+    "item": "minecraft:gunpowder"
+  },
+  "result": {
+    "item": "universalmod:adamantium_dust"
+  }
+}
