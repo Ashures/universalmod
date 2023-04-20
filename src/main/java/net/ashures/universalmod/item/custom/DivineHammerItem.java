@@ -1,12 +1,16 @@
 package net.ashures.universalmod.item.custom;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 public class DivineHammerItem extends Item {
@@ -20,6 +24,17 @@ public class DivineHammerItem extends Item {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         target.kill();
         return super.postHit(stack, target, attacker);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+
+        LightningEntity lightningEntity = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
+        lightningEntity.setCosmetic(true);
+        lightningEntity.setPosition(user.getPos());
+        world.spawnEntity(lightningEntity);
+
+        return super.use(world, user, hand);
     }
 
     @Override
