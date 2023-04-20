@@ -24,10 +24,10 @@ public class ChaosGreatSwordItem extends SwordItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         World world = target.getWorld();
-        LightningEntity lightningEntity = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
-        lightningEntity.setPosition(target.getPos());
 
         for (int i = 0; i < LIGHTNING_SPAWN_COUNT; i++) {
+            LightningEntity lightningEntity = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
+            lightningEntity.setPosition(target.getPos());
             world.spawnEntity(lightningEntity);
         }
 
@@ -51,7 +51,7 @@ public class ChaosGreatSwordItem extends SwordItem {
         if (!(raycast.getType() == HitResult.Type.MISS)) {
             TntEntity tntEntity = new TntEntity(world, blockCheck.x, blockCheck.y, blockCheck.z, user);
             tntEntity.setFuse(0);
-            world.createExplosion(tntEntity, tntEntity.getX(), tntEntity.getBodyY(0.0625), tntEntity.getZ(), 20.0f, Explosion.DestructionType.DESTROY);
+            world.createExplosion(tntEntity, tntEntity.getX(), tntEntity.getBodyY(0.0625), tntEntity.getZ(), 5.0f, Explosion.DestructionType.BREAK);
             return TypedActionResult.success(user.getMainHandStack(), true);
         }
 
