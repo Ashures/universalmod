@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.ashures.universalmod.UniversalMod"
+    ],
+    "client": [
+      "net.ashures.universalmod.UniversalModClient"
     ]
   },
   "mixins": [
