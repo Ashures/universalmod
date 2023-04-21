@@ -21,5 +21,9 @@
 
   "universalmod.healing_staff_success": "Healing Staff Success Sound",
 
-  "itemGroup.universalmod.universal": "Universal"
+  "itemGroup.universalmod.universal": "Universal",
+
+  "key.category.universalmod.universal": "Universal Mod",
+  "key.universalmod.increase_explosion": "Increase Explosion Power",
+  "key.universalmod.decrease_explosion": "Decrease Explosion Power"
 }
