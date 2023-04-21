@@ -16,6 +16,8 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class FireStaffItem extends Item {
+    private int explosionPower = 6;
+
     public FireStaffItem(Settings settings) {
         super(settings);
     }
@@ -31,10 +33,32 @@ public class FireStaffItem extends Item {
         Vec3d direction = new Vec3d(playerRotation.x, playerRotation.y, playerRotation.z);
         Vec3d position = new Vec3d(player.getX(), player.getEyeY() - 0.4, player.getZ());
 
-        FireballEntity entity = new FireballEntity(world, player, direction.x, direction.y, direction.z, 6);
+        FireballEntity entity = new FireballEntity(world, player, direction.x, direction.y, direction.z, explosionPower);
         entity.speed = 4.0f;
         entity.setPosition(position);
 
         world.spawnEntity(entity);
+    }
+
+    public int getExplosionPower() {
+        return explosionPower;
+    }
+
+    public String setExplosionPower(int power, PlayerEntity player) {
+        if (!player.isCreative()) {
+            if (power > 6) {
+                return "Maximum Explosion Power reached!";
+            }
+        } else {
+            if (power > 30) {
+                return "Maximum Explosion Power reached!";
+            }
+        }
+
+        if (power < 1) {
+            return "Minimum Explosion Power reached!";
+        }
+        explosionPower = power;
+        return "Explosion Power set to: " + explosionPower;
     }
 }
