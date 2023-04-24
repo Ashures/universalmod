@@ -27,8 +27,7 @@ public class KeyInputHandler {
                         FireStaffItem item = (FireStaffItem) itemStack.getItem();
                         int currentPower = item.getExplosionPower();
 
-                        String message = item.setExplosionPower(currentPower + 1, client.player);
-                        client.player.sendMessage(Text.of(message), true);
+                        item.setExplosionPower(currentPower + 1, client.player);
                     }
                 }
             }
@@ -39,8 +38,7 @@ public class KeyInputHandler {
                         FireStaffItem item = (FireStaffItem) itemStack.getItem();
                         int currentPower = item.getExplosionPower();
 
-                        String message = item.setExplosionPower(currentPower - 1, client.player);
-                        client.player.sendMessage(Text.of(message), true);
+                        item.setExplosionPower(currentPower - 1, client.player);
                     }
                 }
             }
