@@ -28,7 +28,7 @@ public class KeyInputHandler {
                         int currentPower = item.getExplosionPower();
 
                         String message = item.setExplosionPower(currentPower + 1, client.player);
-                        client.player.sendMessage(Text.of(message), false);
+                        client.player.sendMessage(Text.of(message), true);
                     }
                 }
             }
@@ -40,7 +40,7 @@ public class KeyInputHandler {
                         int currentPower = item.getExplosionPower();
 
                         String message = item.setExplosionPower(currentPower - 1, client.player);
-                        client.player.sendMessage(Text.of(message), false);
+                        client.player.sendMessage(Text.of(message), true);
                     }
                 }
             }
