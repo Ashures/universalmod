@@ -27,6 +27,8 @@ public class ModItems {
             new HealingStaffItem(new FabricItemSettings().group(ModItemGroup.UNIVERSAL).maxCount(1)));
     public static final Item CHAOS_GREAT_SWORD = registerItem("chaos_great_sword",
             new ChaosGreatSwordItem(ModToolMaterials.CHAOS, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.UNIVERSAL).fireproof()));
+    public static final Item WORLD_EATER = registerItem("world_eater",
+            new WorldEaterItem(new FabricItemSettings().group(ModItemGroup.UNIVERSAL).maxCount(1)));
     public static final Item ADAMANTIUM_GOD_ROD = registerItem("adamantium_god_rod",
             new AdamantiumGodRodItem(new FabricItemSettings().maxCount(1)));
     public static final Item DIVINE_HAMMER = registerItem("divine_hammer",

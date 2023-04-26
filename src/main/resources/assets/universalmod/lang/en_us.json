@@ -9,6 +9,7 @@
   "item.universalmod.dragon_staff": "Staff of Dragon Fire",
   "item.universalmod.healing_staff": "Staff of Healing",
   "item.universalmod.chaos_great_sword": "Demonic Great Sword of Chaos",
+  "item.universalmod.world_eater": "World Eater",
 
   "item.universalmod.adamantium_god_rod": "Adamantium God Rod",
   "item.universalmod.divine_hammer": "Ashures' Divine Hammer of Omnipotence",
@@ -24,6 +25,6 @@
   "itemGroup.universalmod.universal": "Universal",
 
   "key.category.universalmod.universal": "Universal Mod",
-  "key.universalmod.increase_explosion": "Increase Explosion Power",
-  "key.universalmod.decrease_explosion": "Decrease Explosion Power"
+  "key.universalmod.increase_power": "Increase Spell Power",
+  "key.universalmod.decrease_power": "Decrease Spell Power"
 }
