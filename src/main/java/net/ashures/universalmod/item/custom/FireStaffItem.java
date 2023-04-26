@@ -47,21 +47,21 @@ public class FireStaffItem extends Item {
     public void setExplosionPower(int power, PlayerEntity player) {
         if (!player.isCreative()) {
             if (power > 6) {
-                player.sendMessage(Text.of("Maximum Explosion Power reached!"), true);
+                player.sendMessage(Text.of("Maximum Spell Power reached!"), true);
                 return;
             }
         } else {
             if (power > 30) {
-                player.sendMessage(Text.of("Maximum Explosion Power reached!"), true);
+                player.sendMessage(Text.of("Maximum Spell Power reached!"), true);
                 return;
             }
         }
 
         if (power < 1) {
-            player.sendMessage(Text.of("Minimum Explosion Power reached!"), true);
+            player.sendMessage(Text.of("Minimum Spell Power reached!"), true);
             return;
         }
         explosionPower = power;
-        player.sendMessage(Text.of("Explosion Power set to: " + explosionPower), true);
+        player.sendMessage(Text.of("Spell Power set to: " + explosionPower), true);
     }
 }
